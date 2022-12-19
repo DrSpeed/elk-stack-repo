@@ -7,12 +7,12 @@
 
 ## Links
 
-- [Repo](https://github.com/DrSpeed/eelk-stack-repo<project-name> "<project-name> Repo")
+- [Repository](https://github.com/DrSpeed/elk-stack-repo)
 
 ---
 ## Screenshots
 
-Radio GPS/SignalStrength data
+Radio GPS/SignalStrength data: <br>
 <img src="map.png" width="400">
 
 ---
@@ -37,8 +37,8 @@ To read Oura data into local json file
 
 **Dr Speed**
 
-- [Profile](https://github.com/DrSpeed "Rohit jain")
-- [Linked In](https://kingtechnologies.in "Welcome")
+- [Profile](https://github.com/DrSpeed "Steven Winter")
+- [Linked In](http:/www.linkedin.com/in/steven-j-winter "Linked In")
 
 ## 🤝 Support
 
