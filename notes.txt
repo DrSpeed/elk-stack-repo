@@ -1,0 +1,71 @@
+# usage notes
+
+ES
+to run ES: ~/elastic/elasticsearch-8.5.3/bin/elasticsearch
+url: http://127.0.0.1:9200/sjw_test_index
+
+KIBANA
+to run Kibana: ~/elastic/kibana-8.5.3/bin/kibana
+url: http://localhost:5601/app/home#/
+
+Logstash
+
+
+GET /_cluster/health
+
+# delete index
+DELETE  /demo-csv
+
+# create index with mapping 
+PUT /demo-csv
+{
+  "mappings": {
+    "properties": {
+      "location": {
+        "type": "geo_point"
+      }
+    }
+  }
+}
+
+# show all indecies
+GET /_cat/indices?v&pretty
+
+# Test, add a point
+PUT demo-csv/_doc/3
+{
+  "text": "Geopoint as an object with 'lat' and 'lon' keys",
+  "location": { 
+    "lat": 41.12,
+    "lon": -71.34
+  }
+}
+
+GET /demo-csv/_doc/3
+
+
+GET /demo-csv/_search?pretty
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+# works with test data
+GET demo-csv/_search
+{
+  "query": {
+    "geo_bounding_box": { 
+      "location": {
+        "top_left": {
+          "lat": 38,
+          "lon": -125
+        },
+        "bottom_right": {
+          "lat": 35,
+          "lon": -120
+        }
+      }
+    }
+  }
+}
