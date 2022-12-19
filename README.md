@@ -1,5 +1,5 @@
 ## ES/ELK Work
-#### Simple collection of Elastic Work</project-description
+#### Simple collection of Elastic Work
 <img src="logo.png" width="200">
 <br>
 
@@ -14,6 +14,10 @@
 
 Radio GPS/SignalStrength data: <br>
 <img src="map.png" width="400">
+<br>
+<img src="oura.jpg" width="200">
+<br>
+Oura Ring
 
 ---
 
@@ -28,7 +32,7 @@ To read Oura data into local json file
 ---
 ## Built With
 
-- EL (ELK) 8.5.1
+- EL (ELK) 8.5.3
 - bash curl
 - Python
 - VS Code
